@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+
+# VSCode / PyCharm / JetBrains
+.idea/
+
+# Caches
+.cache/
+
+# Optional: if you don’t want to upload big files
+*.pkl
+*.pdf

@@ -1,0 +1,17 @@
+langchain>=0.1.0
+langchain-community>=0.0.16
+faiss-cpu>=1.7.4
+torch>=2.0.0
+transformers>=4.36.0
+accelerate>=0.25.0
+pypdf>=3.17.0
+sentence-transformers>=2.2.2
+bitsandbytes>=0.41.0  # For 8-bit quantization (optional)
+#For AytoGen
+pyautogen>=0.2.18
+#For FineTuning
+transformers
+scikit-learn
+pandas
+numpy
+datasets
