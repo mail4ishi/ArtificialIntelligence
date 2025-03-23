@@ -7,7 +7,7 @@ Embedding-based document search using FAISS
 Custom assistant agents using Hugging Face transformers
 Fine-tuning a sentiment analysis model using BERT
 Each script is standalone and can be run individually based on your use case.
-#------------------------------------------------------------
+#-------------------------------------------------------------------------
 🧾 First Install Dependencies
 
 Install them using:
@@ -34,7 +34,40 @@ Demonstrates a multi-agent conversation system using AutoGen, with agents that r
 To run:
 
 python Autogen.py
-#-------------------------------------------------------
+
+Note - You will get response like below
+
+Device set to use cpu
+
+--- Round 1 ---
+UserAgent:
+
+
+--- Round 2 ---
+ProjectManagerAgent:
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+For the first four months of 2015, the FBI collected nearly $25 billion in wiretaps. The FBI, for instance, collected over $1 billion from individuals and businesses associated with the companies they target.
+
+We're also seeing evidence of widespread
+
+--- Round 3 ---
+AssistantAgent:
+For the first four months of 2015, the FBI collected nearly $25 billion in wiretaps. The FBI, for instance, collected over $1 billion from individuals and businesses associated with the companies they target.
+
+We're also seeing evidence of widespread domestic spying, including the NSA gathering data from hundreds of thousands of phone carriers that also include Verizon and AT&T. In addition, Verizon reportedly used the NSA data collection to build its own spyware and to eavesdrop on millions of American Internet users
+
+--- Round 4 ---
+SoftwareEngineerAgent:
+For the first four months of 2015, the FBI collected nearly $25 billion in wiretaps. The FBI, for instance, collected over $1 billion from individuals and businesses associated with the companies they target.
+
+We're also seeing evidence of widespread domestic spying, including the NSA gathering data from hundreds of thousands of phone carriers that also include Verizon and AT&T. In addition, Verizon reportedly used the NSA data collection to build its own spyware and to eavesdrop on millions of American Internet users, in violation of the Espionage Act.
+
+As of June, the NSA collected over 14 billion phone calls, almost all of them from Americans. A government watchdog report has the NSA collecting over 17 billion telephone calls for each year.
+
+
+
+
+#-----------------------------------------------------------------------------
 📄 DocSearchApp.py
 Description:
 FastAPI application that allows users to search a preprocessed PDF using embedding-based similarity. Loads from a precomputed vector store or processes the PDF if not available.
@@ -58,7 +91,15 @@ Fine-tunes a distilbert-base-uncased model for binary sentiment classification. 
 To run:
 
 python FineTuneSentimentTrainer.py
-#-------------------------------------------------------
+
+Note- You will get below response.
+
+Text: I'm really impressed with the quality!
+Sentiment: Positive
+
+Text: This product is absolutely useless.
+Sentiment: Negative
+#----------------------------------------------------------------------------
 📄 SimpleRAGApp.py
 Description:
 Implements a console-based Retrieval-Augmented Generation (RAG) app. Loads a PDF, embeds the content, and allows users to ask questions and get answers from the context using Microsoft's Phi-2 language model.
@@ -89,4 +130,4 @@ Answer the question directly and concisely based on the context provided:
 According to the context, one theory of physics is Quantum Mechanics.
 
 
-#-----------------------The End---------------------------------
+#-----------------------The End-----------------------------------------------
