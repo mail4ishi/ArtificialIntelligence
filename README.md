@@ -67,4 +67,26 @@ To run:
 
 python SimpleRAGApp.py
 
+You will be asked the below questions:
+1. Load PDF
+2. Ask Question
+3. Exit
+
+What would be your response:
+
+Press 1.
+Write --> sample.pdf
+
+Press 2.
+Ask --> Give me one theory in physics? # or any question related to the writing in sample.pdf
+
+Note - You will get following response with contect and soruce info:
+
+Question: Give me one theory of physics
+
+Answer the question directly and concisely based on the context provided:
+
+According to the context, one theory of physics is Quantum Mechanics.
+
+
 #-----------------------The End---------------------------------
